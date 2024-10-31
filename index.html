@@ -236,22 +236,17 @@
       const sections = document.querySelectorAll("section");
       const radios = document.querySelectorAll('input[name="page"]');
 
-      // Function to highlight the correct icon based on scroll position
       function highlightIcon() {
-        let scrollPosition = window.scrollY + window.innerHeight;
-
-        // Handle the case where the scroll position is at the very top of the page
-        if (scrollPosition <= sections[0].offsetTop + sections[0].clientHeight) {
-          radios[0].checked = true;
-          return;
-        }
+        let scrollPosition = window.scrollY + window.innerHeight / 2; // Use the middle of the viewport
 
         let found = false;
 
         sections.forEach((section, index) => {
           const sectionTop = section.offsetTop;
           const sectionHeight = section.clientHeight;
+          const sectionMiddle = sectionTop + sectionHeight / 2; // Calculate the middle of the section
 
+          // Check if the middle of the viewport is within the bounds of the section
           if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
             radios[index].checked = true;
             found = true;
