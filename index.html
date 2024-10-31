@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aziz Baatout</title>
+    <!-- Font Awesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Landing Section -->
+    <section class="landing">
+      <!-- Intro -->
+      <div class="container">
+        <h1 class="">Aziz Baatout</h1>
+        <h2>Software Engineer</h2>
+        <a class="location" target="_blank" href="https://www.google.com/search?q=gent">
+          <i class="fas fa-map-marker-alt"></i> Ghent, Belgium
+        </a>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/aziz-baatout" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/Azizo-B" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="mailto:aziz.baatout@gmail.com"><i class="fas fa-envelope"></i></a>
+          <a href="/assets/aziz_resume_6_10.pdf" target="_blank" download="Aziz_Baatout_CV.pdf" class="cv-icon">
+            <i class="fa-regular fa-file"></i>
+            <span class="cv-text">CV</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience">
+      <div class="container">
+        <h1>Experience</h1>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <h2>Software Developer</h2>
+              <h3>Fintrax</h3>
+              <p class="experience-date">February 2024 - Present</p>
+              <ul class="experience-details">
+                <li>Developing features for a web app using Django, PostgreSQL, and Angular.</li>
+                <li>
+                  Led document processing efforts, implementing PDF parsing and OCR solutions for efficient text
+                  extraction.
+                </li>
+                <li>
+                  Worked with APIs such as Exact Online, Silverfin, MyMinfin and various other government services.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <h2>Software Engineer</h2>
+              <h3>EB Accountancy</h3>
+              <p class="experience-date">August 2023 - April 2024</p>
+              <ul class="experience-details">
+                <li>Implemented AI-powered OCR capabilities for efficient invoice processing.</li>
+                <li>
+                  Developed AI-driven invoice classification, further reducing processing time and improving accuracy
+                </li>
+                <li>
+                  Developed an ML ops pipeline, creating a positive feedback loop that continuously improves system
+                  performance with every invoice processed.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects">
+      <div class="container">
+        <h1>Projects</h1>
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <div class="project-card">
+            <h2>SBAT Monitoring System</h2>
+            <p class="project-date">August 2024 - September 2024</p>
+            <p>
+              A real-time notification service tracking available driving test slots across platforms. Uses
+              <strong>Python</strong>, <strong>FastAPI</strong>, <strong>Google Cloud</strong>, and
+              <strong>MongoDB</strong>
+              for data monitoring and instant notifications via email, Discord, and Telegram.
+            </p>
+            <p class="project-impact">Cut users' driving exam wait times from months to just days.</p>
+            <a href="https://rijexamenmeldingen.be" class="project-link" target="_blank">
+              <span class="live-dot"></span> Live Project
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="12"
+                height="12"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="icon-external-link"
+              >
+                <path d="M18 13v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h5"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+            <div class="project-tech">
+              <span>Python</span><span>FastAPI</span><span>Google Cloud</span><span>MongoDB</span><span>Docker</span>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card">
+            <h2>AI-powered Invoice Automation</h2>
+            <p class="project-date">EB Accountancy, 2023</p>
+            <p>
+              Built an AI-powered OCR solution to automate invoice processing, integrating with
+              <strong>GCP's serverless</strong> architecture for seamless deployment.
+            </p>
+            <p class="project-impact">
+              Achieved 80% automation in invoice classification, saving 2 hours daily in processing time.
+            </p>
+            <div class="project-tech">
+              <span>Python</span><span>Google Cloud</span><span>Document AI</span><span>Machine Learning</span
+              ><span>Docker</span>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="project-card">
+            <h2>NVIDIA FE Bot</h2>
+            <p class="project-date">2020</p>
+            <p>
+              Developed a bot to monitor NVIDIA GPU stock in real-time, enabling automated notifications on
+              availability. This project pushed me to delve deeper into the world of programming and ignited my passion
+              for technology. It was a turning point in my career, showcasing the power of automation and real-time
+              data.
+            </p>
+            <p class="project-impact">Helped me and my friends secure GPUs amidst high demand.</p>
+            <div class="project-tech"><span>Python</span><span>Web Scraping</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section class="techstack">
+      <div class="container">
+        <h1>Tech Stack</h1>
+        <div class="tech-used">
+          <div class="tech-item"><img src="/assets/icons/python.svg" alt="Python Icon" /><span>Python</span></div>
+          <div class="tech-item"><img src="/assets/icons/java.svg" alt="Java Icon" /><span>Java</span></div>
+          <div class="tech-item">
+            <img src="/assets/icons/javascript.svg" alt="JavaScript Icon" /><span>JavaScript</span>
+          </div>
+          <div class="tech-item">
+            <img src="/assets/icons/typescript.svg" alt="TypeScript Icon" /><span>TypeScript</span>
+          </div>
+          <div class="tech-item"><img src="/assets/icons/angular.svg" alt="Angular Icon" /><span>Angular</span></div>
+          <div class="tech-item"><img src="/assets/icons/node.svg" alt="Node.js Icon" /><span>Node.js</span></div>
+          <div class="tech-item"><img src="/assets/icons/django.svg" alt="Django Icon" /><span>Django</span></div>
+          <div class="tech-item"><img src="/assets/icons/flask.svg" alt="Flask Icon" /><span>Flask</span></div>
+          <div class="tech-item"><img src="/assets/icons/fastapi.svg" alt="FastAPI Icon" /><span>FastAPI</span></div>
+          <div class="tech-item"><img src="/assets/icons/mysql.svg" alt="MySQL Icon" /><span>MySQL</span></div>
+          <div class="tech-item">
+            <img src="/assets/icons/postgressql.svg" alt="PostgresSQL Icon" /><span>PostgresSQL</span>
+          </div>
+          <div class="tech-item"><img src="/assets/icons/mongodb.svg" alt="MongoDB Icon" /><span>MongoDB</span></div>
+          <div class="tech-item"><img src="/assets/icons/aws.svg" alt="AWS Icon" /><span>AWS</span></div>
+          <div class="tech-item">
+            <img src="/assets/icons/googlecloud.svg" alt="Google Cloud Icon" /><span>GCloud</span>
+          </div>
+          <div class="tech-item"><img src="/assets/icons/docker.svg" alt="Docker Icon" /><span>Docker</span></div>
+          <div class="tech-item"><img src="/assets/icons/git.svg" alt="Git Icon" /><span>Git</span></div>
+          <div class="tech-item"><img src="/assets/icons/bash.svg" alt="Bash Icon" /><span>Bash</span></div>
+        </div>
+      </div>
+    </section>
+
+    <nav>
+      <label title="home" for="home" class="label">
+        <input id="home" name="page" type="radio" checked="" />
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+          <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+          <path
+            d="M575.8 255.5c0 18-15 32.1-32 32.1l-32 0 .7 160.2c0 2.7-.2 5.4-.5 8.1l0 16.2c0 22.1-17.9 40-40 40l-16 0c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1L416 512l-24 0c-22.1 0-40-17.9-40-40l0-24 0-64c0-17.7-14.3-32-32-32l-64 0c-17.7 0-32 14.3-32 32l0 64 0 24c0 22.1-17.9 40-40 40l-24 0-31.9 0c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2l-16 0c-22.1 0-40-17.9-40-40l0-112c0-.9 0-1.9 .1-2.8l0-69.7-32 0c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"
+          />
+        </svg>
+      </label>
+      <label title="experience" for="experience" class="label">
+        <input id="experience" name="page" type="radio" />
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+          <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+          <path
+            d="M184 48l144 0c4.4 0 8 3.6 8 8l0 40L176 96l0-40c0-4.4 3.6-8 8-8zm-56 8l0 40L64 96C28.7 96 0 124.7 0 160l0 96 192 0 128 0 192 0 0-96c0-35.3-28.7-64-64-64l-64 0 0-40c0-30.9-25.1-56-56-56L184 0c-30.9 0-56 25.1-56 56zM512 288l-192 0 0 32c0 17.7-14.3 32-32 32l-64 0c-17.7 0-32-14.3-32-32l0-32L0 288 0 416c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-128z"
+          />
+        </svg>
+      </label>
+      <label title="projects" for="projects" class="label">
+        <input id="projects" name="page" type="radio" />
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+          <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+          <path
+            d="M384 480l48 0c11.4 0 21.9-6 27.6-15.9l112-192c5.8-9.9 5.8-22.1 .1-32.1S555.5 224 544 224l-400 0c-11.4 0-21.9 6-27.6 15.9L48 357.1 48 96c0-8.8 7.2-16 16-16l117.5 0c4.2 0 8.3 1.7 11.3 4.7l26.5 26.5c21 21 49.5 32.8 79.2 32.8L416 144c8.8 0 16 7.2 16 16l0 32 48 0 0-32c0-35.3-28.7-64-64-64L298.5 96c-17 0-33.3-6.7-45.3-18.7L226.7 50.7c-12-12-28.3-18.7-45.3-18.7L64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l23.7 0L384 480z"
+          />
+        </svg>
+      </label>
+      <label title="techstack" for="techstack" class="label">
+        <input id="techstack" name="page" type="radio" />
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+          <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+          <path
+            d="M64 96c0-35.3 28.7-64 64-64l384 0c35.3 0 64 28.7 64 64l0 256-64 0 0-256L128 96l0 256-64 0L64 96zM0 403.2C0 392.6 8.6 384 19.2 384l601.6 0c10.6 0 19.2 8.6 19.2 19.2c0 42.4-34.4 76.8-76.8 76.8L76.8 480C34.4 480 0 445.6 0 403.2zM281 209l-31 31 31 31c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-48-48c-9.4-9.4-9.4-24.6 0-33.9l48-48c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9zM393 175l48 48c9.4 9.4 9.4 24.6 0 33.9l-48 48c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l31-31-31-31c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0z"
+          />
+        </svg>
+      </label>
+    </nav>
+
+    <script>
+      const sections = document.querySelectorAll("section");
+      const radios = document.querySelectorAll('input[name="page"]');
+
+      // Function to highlight the correct icon based on scroll position
+      function highlightIcon() {
+        let scrollPosition = window.scrollY + window.innerHeight;
+
+        // Handle the case where the scroll position is at the very top of the page
+        if (scrollPosition <= sections[0].offsetTop + sections[0].clientHeight) {
+          radios[0].checked = true;
+          return;
+        }
+
+        let found = false;
+
+        sections.forEach((section, index) => {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.clientHeight;
+
+          if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+            radios[index].checked = true;
+            found = true;
+          }
+        });
+
+        // Check if we are at the bottom of the last section
+        if (!found && scrollPosition >= document.body.scrollHeight) {
+          radios[sections.length - 1].checked = true;
+        }
+      }
+
+      function scrollToSection(event) {
+        const checkedIndex = Array.from(radios).indexOf(event.target);
+        const targetSection = sections[checkedIndex];
+
+        if (targetSection) {
+          targetSection.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+          });
+        }
+      }
+
+      window.addEventListener("scroll", highlightIcon);
+      radios.forEach((radio) => radio.addEventListener("change", scrollToSection));
+    </script>
+  </body>
+</html>
