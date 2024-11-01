@@ -22,7 +22,7 @@
   </head>
   <body>
     <!-- Landing Section -->
-    <section class="landing">
+    <section id="intro-section" class="landing">
       <!-- Intro -->
       <div class="container">
         <h1 class="">Aziz Baatout</h1>
@@ -34,7 +34,7 @@
           <a href="https://www.linkedin.com/in/aziz-baatout" target="_blank"><i class="fab fa-linkedin"></i></a>
           <a href="https://github.com/Azizo-B" target="_blank"><i class="fab fa-github"></i></a>
           <a href="mailto:aziz.baatout@gmail.com"><i class="fas fa-envelope"></i></a>
-          <a href="assets/aziz_resume_6_10.pdf" target="_blank" download="Aziz_Baatout_CV.pdf" class="cv-icon">
+          <a href="assets/Aziz Baatout CV.pdf" target="_blank" download="Aziz_Baatout_CV.pdf" class="cv-icon">
             <i class="fa-regular fa-file"></i>
             <span class="cv-text">CV</span>
           </a>
@@ -43,7 +43,7 @@
     </section>
 
     <!-- Experience Section -->
-    <section class="experience">
+    <section id="experience-section" class="experience">
       <div class="container">
         <h1>Experience</h1>
         <div class="timeline">
@@ -72,7 +72,7 @@
               <ul class="experience-details">
                 <li>Implemented AI-powered OCR capabilities for efficient invoice processing.</li>
                 <li>
-                  Developed AI-driven invoice classification, further reducing processing time and improving accuracy
+                  Developed AI-driven invoice classification, further reducing processing time and improving accuracy.
                 </li>
                 <li>
                   Developed an ML ops pipeline, creating a positive feedback loop that continuously improves system
@@ -86,7 +86,7 @@
     </section>
 
     <!-- Projects Section -->
-    <section class="projects">
+    <section id="projects-section" class="projects">
       <div class="container">
         <h1>Projects</h1>
         <div class="projects-grid">
@@ -160,7 +160,7 @@
     </section>
 
     <!-- Tech Stack Section -->
-    <section class="techstack">
+    <section id="techstack-section" class="techstack">
       <div class="container">
         <h1>Tech Stack</h1>
         <div class="tech-used">
@@ -175,20 +175,26 @@
           <div class="tech-item"><img src="assets/icons/angular.svg" alt="Angular Icon" /><span>Angular</span></div>
           <div class="tech-item"><img src="assets/icons/node.svg" alt="Node.js Icon" /><span>Node.js</span></div>
           <div class="tech-item"><img src="assets/icons/django.svg" alt="Django Icon" /><span>Django</span></div>
-          <div class="tech-item"><img src="assets/icons/flask.svg" alt="Flask Icon" /><span>Flask</span></div>
+          <div class="tech-item">
+            <img src="assets/icons/flask-dark.svg" class="mode-switch-image" alt="Flask Icon" /><span>Flask</span>
+          </div>
           <div class="tech-item"><img src="assets/icons/fastapi.svg" alt="FastAPI Icon" /><span>FastAPI</span></div>
           <div class="tech-item"><img src="assets/icons/mysql.svg" alt="MySQL Icon" /><span>MySQL</span></div>
           <div class="tech-item">
             <img src="assets/icons/postgressql.svg" alt="PostgresSQL Icon" /><span>PostgresSQL</span>
           </div>
           <div class="tech-item"><img src="assets/icons/mongodb.svg" alt="MongoDB Icon" /><span>MongoDB</span></div>
-          <div class="tech-item"><img src="assets/icons/aws.svg" alt="AWS Icon" /><span>AWS</span></div>
+          <div class="tech-item">
+            <img src="assets/icons/aws-dark.svg" class="mode-switch-image" alt="AWS Icon" /><span>AWS</span>
+          </div>
           <div class="tech-item">
             <img src="assets/icons/googlecloud.svg" alt="Google Cloud Icon" /><span>GCloud</span>
           </div>
           <div class="tech-item"><img src="assets/icons/docker.svg" alt="Docker Icon" /><span>Docker</span></div>
           <div class="tech-item"><img src="assets/icons/git.svg" alt="Git Icon" /><span>Git</span></div>
-          <div class="tech-item"><img src="assets/icons/bash.svg" alt="Bash Icon" /><span>Bash</span></div>
+          <div class="tech-item">
+            <img src="assets/icons/bash-dark.svg" class="mode-switch-image" alt="Bash Icon" /><span>Bash</span>
+          </div>
         </div>
       </div>
     </section>
@@ -212,6 +218,29 @@
           />
         </svg>
       </label>
+      <!-- Light/Dark Mode Toggle -->
+      <div class="container">
+        <label class="toggle" for="switch">
+          <input id="switch" class="input" type="checkbox" />
+          <div class="icon icon--moon">
+            <svg height="32" width="32" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path
+                clip-rule="evenodd"
+                d="M9.528 1.718a.75.75 0 01.162.819A8.97 8.97 0 009 6a9 9 0 009 9 8.97 8.97 0 003.463-.69.75.75 0 01.981.98 10.503 10.503 0 01-9.694 6.46c-5.799 0-10.5-4.701-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 01.818.162z"
+                fill-rule="evenodd"
+              ></path>
+            </svg>
+          </div>
+
+          <div class="icon icon--sun">
+            <svg height="32" width="32" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"
+              ></path>
+            </svg>
+          </div>
+        </label>
+      </div>
       <label title="projects" for="projects" class="label">
         <input id="projects" name="page" type="radio" />
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
@@ -233,6 +262,20 @@
     </nav>
 
     <script>
+      function toggleLightModeImages() {
+        const isLightMode = document.body.classList.contains("light-mode");
+        document.querySelectorAll(".mode-switch-image").forEach((img) => {
+          const currentSrc = img.src;
+          img.src = isLightMode ? currentSrc.replace("-dark", "-light") : currentSrc.replace("-light", "-dark");
+        });
+      }
+      const themeToggle = document.getElementById("switch");
+
+      themeToggle.addEventListener("change", () => {
+        document.body.classList.toggle("light-mode");
+        toggleLightModeImages();
+      });
+
       const sections = document.querySelectorAll("section");
       const radios = document.querySelectorAll('input[name="page"]');
 

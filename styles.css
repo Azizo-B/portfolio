@@ -10,7 +10,50 @@
 body {
     font-family: 'Roboto', Georgia, 'Times New Roman', Times, serif;
     background-color: #272727;
+    transition: background-color 0.8s, color 0.8s;
+    padding-bottom: 40px;
 }
+
+
+.toggle {
+    background-color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    box-shadow: 0 0 50px 20px rgba(0, 0, 0, .1);
+    line-height: 1;
+}
+
+.input {
+    display: none;
+}
+
+.icon {
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
+    transition: transform 500ms;
+}
+
+.icon--moon {
+    transition-delay: 200ms;
+}
+
+.icon--sun {
+    transform: scale(0);
+}
+
+#switch:checked+.icon--moon {
+    transform: rotate(360deg) scale(0);
+}
+
+#switch:checked~.icon--sun {
+    transition-delay: 200ms;
+    transform: scale(1) rotate(360deg);
+}
+
 
 *::-webkit-scrollbar {
     width: 5px;
@@ -59,6 +102,10 @@ h2 {
     text-decoration: none;
 }
 
+.location i {
+    color: #e74c3c;
+}
+
 /* Social Icon Styles */
 .social-icons {
     display: flex;
@@ -67,13 +114,16 @@ h2 {
 }
 
 .social-icons a {
+    display: inline-flex;
+    text-decoration: none;
+    border-radius: 200%;
     color: #b3b3b3;
     font-size: 2em;
     transition: color 0.3s, transform 0.3s;
 }
 
 .social-icons a:hover {
-    color: #fff;
+    color: #e74c3c;
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
@@ -430,4 +480,140 @@ nav {
     width: 100%;
     left: 0;
     top: 25px;
+}
+
+/* Light Mode Enhancements */
+
+body.light-mode {
+    background-color: #f8f9fa;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+}
+
+body.light-mode h2 {
+    color: black;
+}
+
+/* Toggle Button */
+body.light-mode .toggle {
+    background-color: #f1f3f5;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Section */
+body.light-mode section {
+    color: #333;
+}
+
+/* Container Header */
+body.light-mode .container h1 {
+    color: #222;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Subheader */
+body.light-mode .landing h2 {
+    color: #666;
+}
+
+/* Location Styles */
+body.light-mode .location {
+    color: #555;
+}
+
+/* Social Icons */
+body.light-mode .social-icons a {
+    color: #555;
+}
+
+body.light-mode .social-icons a:hover {
+    color: #ff5252;
+    box-shadow: 0 8px 20px rgba(255, 82, 82, 0.3);
+}
+
+/* CV Icon */
+body.light-mode .cv-text {
+    color: #333;
+}
+
+/* Tech Stack */
+body.light-mode .techstack h1 {
+    color: #111;
+    text-transform: uppercase;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+
+
+body.light-mode .tech-item {
+    background: #ffffff;
+    color: #444;
+}
+
+body.light-mode .tech-item:hover {
+    color: #222;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Projects */
+body.light-mode .projects h1 {
+    color: #222;
+}
+
+body.light-mode .project-card {
+    background: #ffffff;
+    color: #444;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .project-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+body.light-mode .project-date {
+    color: #888;
+}
+
+body.light-mode .project-impact {
+    color: #e74c3c;
+}
+
+/* Project Links */
+body.light-mode .project-link {
+    color: #ff5252;
+}
+
+body.light-mode .project-link:hover {
+    color: #e60000;
+}
+
+/* Experience */
+body.light-mode .experience h1 {
+    color: #222;
+}
+
+body.light-mode .timeline-content {
+    background: #ffffff;
+    color: #333;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .timeline-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 22px rgba(0, 0, 0, 0.15);
+}
+
+body.light-mode .experience-date {
+    color: #888;
+}
+
+/* Timeline */
+body.light-mode .timeline::before {
+    background-color: #ff5252;
+}
+
+body.light-mode .timeline-item::before {
+    background-color: #ff5252;
 }
