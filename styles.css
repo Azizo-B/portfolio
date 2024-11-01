@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
 /* Reset */
 * {
     margin: 0;
@@ -243,7 +241,7 @@ h2 {
 }
 
 .project-date {
-    color: #909090;
+    color: #f4eeee;
     font-size: 0.9em;
     margin-bottom: 0.5em;
 }
@@ -274,7 +272,7 @@ h2 {
     align-items: center;
     margin-top: 5px;
     gap: 5px;
-    color: #ff4d4d;
+    color: #FF5757;
     font-weight: bold;
     text-decoration: none;
     font-size: 0.95rem;
