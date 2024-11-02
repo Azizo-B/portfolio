@@ -232,7 +232,7 @@ h2 {
     color: #b3b3b3;
     text-align: left;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.8s, color 0.8s;
 }
 
 .project-card:hover {
@@ -356,7 +356,8 @@ h2 {
     color: #b3b3b3;
     text-align: left;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.8s, color 0.8s;
+    ;
     width: 80%;
     margin: 0 20px;
     position: relative;
@@ -563,6 +564,7 @@ body.light-mode .project-card {
     background: #ffffff;
     color: #444;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.8s, color 0.8s;
 }
 
 body.light-mode .project-card:hover {
@@ -596,6 +598,7 @@ body.light-mode .timeline-content {
     background: #ffffff;
     color: #333;
     box-shadow: 0 4px 18px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.8s, color 0.8s;
 }
 
 body.light-mode .timeline-content:hover {
