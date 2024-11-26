@@ -95,7 +95,7 @@ h2 {
 .location {
     color: #b3b3b3;
     font-size: 0.9em;
-    margin-bottom: 10vh;
+    margin-bottom: 5vh;
     display: inline-block;
     text-decoration: none;
 }
@@ -107,7 +107,7 @@ h2 {
 /* Social Icon Styles */
 .social-icons {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     gap: 15px;
 }
 
