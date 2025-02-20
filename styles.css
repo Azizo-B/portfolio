@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: 'Roboto', Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Roboto';
     background-color: #272727;
     transition: background-color 0.8s, color 0.8s;
     padding-bottom: 40px;
